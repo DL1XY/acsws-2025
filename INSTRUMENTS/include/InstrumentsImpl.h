@@ -10,18 +10,21 @@
  
 //Skeleton interface for server implementation
 #include <InstrumentS.h>
+
+#include <TypesC.h>
+
  
 //Error definitions for catching and raising exceptions
-class InstrumentComponentImpl : public virtual acscomponent::ACSComponentImpl, public virtual POA_workshop::InstrumentComponent {
+class InstrumentsImpl : public virtual acscomponent::ACSComponentImpl {
   public:
-    InstrumentComponentImpl(const ACE_CString& name, maci::ContainerServices * containerServices);
-    virtual ~InstrumentComponentImpl();
+    InstrumentsImpl(const ACE_CString& name, maci::ContainerServices * containerServices);
+    virtual ~InstrumentsImpl();
     void cameraOn ();
-	void cameraOff ();
-	TYPES::ImageType takeImage(long exposureTime);
-	void setRGB(TYPES::RGB rgbConfig);
-	void setPixelBias( long bias);
-	void setResetLevel(long resetLevel);
+    void cameraOff ();
+    TYPES::ImageType takeImage(long exposureTime);
+    void setRGB(TYPES::RGB rgbConfig);
+    void setPixelBias( long bias);
+    void setResetLevel(long resetLevel);
 };
  
 #endif
