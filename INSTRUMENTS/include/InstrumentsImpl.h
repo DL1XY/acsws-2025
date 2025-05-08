@@ -9,7 +9,7 @@
 #include <acscomponentImpl.h>
  
 //Skeleton interface for server implementation
-#include <HelloComponentS.h>
+#include <InstrumentS.h>
  
 //Error definitions for catching and raising exceptions
 class InstrumentComponentImpl : public virtual acscomponent::ACSComponentImpl, public virtual POA_workshop::InstrumentComponent {
