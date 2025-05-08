@@ -82,7 +82,7 @@ LIBRARIES_L     =
 
 
 InstrumentsImpl_OBJECTS = InstrumentsImpl
-InstrumentsImpl_LIBS = InstrumentStubs
+InstrumentsImpl_LIBS = InstrumentStubs acscomponent
 #
 # <brief description of lllll library>
 lllll_OBJECTS   =
