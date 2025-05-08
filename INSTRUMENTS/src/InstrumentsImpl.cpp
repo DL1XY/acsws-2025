@@ -6,11 +6,6 @@ InstrumentsImpl::InstrumentsImpl(const ACE_CString& name, maci::ContainerService
 InstrumentsImpl::~InstrumentsImpl() {
 }
  
-void InstrumentImpl::cameraOn() {
+void InstrumentsImpl::cameraOn() {
     std::cout << "CameraOn called" << std::endl;
 }
- 
-/* --------------- [ MACI DLL support functions ] -----------------*/
-#include <maciACSComponentDefines.h>
-MACI_DLL_SUPPORT_FUNCTIONS(InstrumentsImpl)
-/* ----------------------------------------------------------------*/

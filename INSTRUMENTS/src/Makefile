@@ -72,14 +72,17 @@ xxxxx_LIBS      =
 #
 # Includes (.h) files (public only)
 # ---------------------------------
-INCLUDES        =
+INCLUDES        = InstrumentsImpl.h
 
 #
 # Libraries (public and local)
 # ----------------------------
-LIBRARIES       =
+LIBRARIES       =InstrumentsImpl
 LIBRARIES_L     =
 
+
+InstrumentsImpl_OBJECTS = InstrumentsImpl
+InstrumentsImpl_LIBS = InstrumentStubs
 #
 # <brief description of lllll library>
 lllll_OBJECTS   =
