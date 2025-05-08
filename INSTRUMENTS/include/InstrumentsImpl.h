@@ -15,16 +15,16 @@
 
  
 //Error definitions for catching and raising exceptions
-class InstrumentsImpl : public virtual acscomponent::ACSComponentImpl {
+class InstrumentsImpl : public virtual acscomponent::ACSComponentImpl, public virtual POA_INSTRUMENT_MODULE::Instrument{
   public:
     InstrumentsImpl(const ACE_CString& name, maci::ContainerServices * containerServices);
     virtual ~InstrumentsImpl();
     void cameraOn ();
     void cameraOff ();
-    TYPES::ImageType takeImage(long exposureTime);
-    void setRGB(TYPES::RGB rgbConfig);
-    void setPixelBias( long bias);
-    void setResetLevel(long resetLevel);
+    TYPES::ImageType * takeImage(CORBA::Long exposureTime);
+    void setRGB(const TYPES::RGB& rgbConfig);
+    void setPixelBias(CORBA::Long bias);
+    void setResetLevel(CORBA::Long resetLevel);
 };
  
 #endif
