@@ -674,15 +674,7 @@
  /home/almamgr/development/introot/include/InstrumentC.inl \
  /home/almamgr/development/introot/include/TypesS.h \
  /home/almamgr/development/introot/include/SYSTEMErrS.h \
- /alma/ACS-2025APR/ACSSW/include/maciACSComponentDefines.h \
- /alma/ACS-2025APR/ACSSW/include/acserrACSbaseExImpl.h \
- /alma/ACS-2025APR/ACSSW/include/baciCharacteristicComponentImpl.h \
- /alma/ACS-2025APR/ACSSW/include/baci.h \
- /alma/ACS-2025APR/ACSSW/include/baciExport.h \
- /alma/ACS-2025APR/ACSSW/include/baciThread.h \
- /alma/ACS-2025APR/ACSSW/include/baciExport.h \
- /alma/ACS-2025APR/ACSSW/include/acsThreadBase.h \
- /alma/ACS-2025APR/ACSSW/include/baciTypes.h \
+ /home/almamgr/development/introot/include/CameraC.h \
  /alma/ACS-2025APR/ACSSW/include/baciC.h \
  /alma/ACS-2025APR/TAO/ACE_wrappers/build/linux/TAO/tao/AnyTypeCode/Any_Arg_Traits.h \
  /alma/ACS-2025APR/TAO/ACE_wrappers/build/linux/TAO/orbsvcs/orbsvcs/CosPropertyC.h \
@@ -726,6 +718,19 @@
  /alma/ACS-2025APR/ACSSW/include/baciErrTypePropertyC.h \
  /alma/ACS-2025APR/ACSSW/include/baciErrTypePropertyC.inl \
  /alma/ACS-2025APR/ACSSW/include/baciC.inl \
+ /home/almamgr/development/introot/include/CameraC.inl \
+ /home/almamgr/development/introot/include/SYSTEMErr.h \
+ /alma/ACS-2025APR/ACSSW/include/acserrExceptionManager.h \
+ /alma/ACS-2025APR/ACSSW/include/acserrGenExport.h \
+ /alma/ACS-2025APR/ACSSW/include/maciACSComponentDefines.h \
+ /alma/ACS-2025APR/ACSSW/include/acserrACSbaseExImpl.h \
+ /alma/ACS-2025APR/ACSSW/include/baciCharacteristicComponentImpl.h \
+ /alma/ACS-2025APR/ACSSW/include/baci.h \
+ /alma/ACS-2025APR/ACSSW/include/baciExport.h \
+ /alma/ACS-2025APR/ACSSW/include/baciThread.h \
+ /alma/ACS-2025APR/ACSSW/include/baciExport.h \
+ /alma/ACS-2025APR/ACSSW/include/acsThreadBase.h \
+ /alma/ACS-2025APR/ACSSW/include/baciTypes.h \
  /alma/ACS-2025APR/ACSSW/include/baciS.h \
  /alma/ACS-2025APR/TAO/ACE_wrappers/build/linux/TAO/orbsvcs/orbsvcs/CosPropertyS.h \
  /alma/ACS-2025APR/TAO/ACE_wrappers/build/linux/TAO/tao/BooleanSeqS.h \

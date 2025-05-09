@@ -17,7 +17,9 @@
  
 //Error definitions for catching and raising exceptions
 class InstrumentsImpl : public virtual acscomponent::ACSComponentImpl, public virtual POA_INSTRUMENT_MODULE::Instrument{
-  bool isCameraOn;
+  bool _isCameraOn;
+  CORBA::Long _bias;
+  CORBA::Long _resetLevel;
   public:
     InstrumentsImpl(const ACE_CString& name, maci::ContainerServices * containerServices);
     virtual ~InstrumentsImpl();
