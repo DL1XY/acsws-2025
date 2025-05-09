@@ -13,9 +13,11 @@
 
 #include <TypesC.h>
 
+#include <CameraC.h>
  
 //Error definitions for catching and raising exceptions
 class InstrumentsImpl : public virtual acscomponent::ACSComponentImpl, public virtual POA_INSTRUMENT_MODULE::Instrument{
+  bool isCameraOn;
   public:
     InstrumentsImpl(const ACE_CString& name, maci::ContainerServices * containerServices);
     virtual ~InstrumentsImpl();
@@ -25,6 +27,8 @@ class InstrumentsImpl : public virtual acscomponent::ACSComponentImpl, public vi
     void setRGB(const TYPES::RGB& rgbConfig);
     void setPixelBias(CORBA::Long bias);
     void setResetLevel(CORBA::Long resetLevel);
+  private:
+    
 };
  
 #endif
