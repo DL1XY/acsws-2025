@@ -28,8 +28,10 @@ TYPES::ImageType * InstrumentsImpl::takeImage(CORBA::Long exposureTime){
     if (_isCameraOn != true) {
         throw SYSTEMErr::CameraIsOffExImpl(__FILE__, __LINE__, "InstrumentsImpl::takeImage").getCameraIsOffEx(); 
     }
-
-    TYPES::ImageType * image;
+    std::string expTimeStr = std::to_string(exposureTime);
+    CAMERA_MODULE::Camera_var comp = this->getContainerServices()->getComponent<CAMERA_MODULE::Camera>("CAMERA");
+    TYPES::ImageType * image = comp->getFrame(expTimeStr.c_str(), "100");
+    this->getContainerServices()->releaseComponent(comp->name());
     return image;
 }
 void InstrumentsImpl::setRGB(const TYPES::RGB& rgbConfig){
