@@ -10,14 +10,14 @@ InstrumentsImpl::~InstrumentsImpl() {
  
 void InstrumentsImpl::cameraOn() {
     ACS_DEBUG("InstrumentsImpl::cameraOn()", "Camera ON called");
-    CAMERA_MODULE::Camera_var comp = this->getContainerServices()->getComponent<CAMERA_MODULE::Camera>("<CAMERA>");
+    CAMERA_MODULE::Camera_var comp = this->getContainerServices()->getComponent<CAMERA_MODULE::Camera>("CAMERA");
     comp->on();
     this->getContainerServices()->releaseComponent(comp->name());
     _isCameraOn = true;
 }
 void InstrumentsImpl::cameraOff (){ 
     ACS_DEBUG("InstrumentsImpl::cameraOff()",  "Camera OFF called");
-    CAMERA_MODULE::Camera_var comp = this->getContainerServices()->getComponent<CAMERA_MODULE::Camera>("<CAMERA>");
+    CAMERA_MODULE::Camera_var comp = this->getContainerServices()->getComponent<CAMERA_MODULE::Camera>("CAMERA");
     comp->off();
     this->getContainerServices()->releaseComponent(comp->name());
     _isCameraOn = false;
